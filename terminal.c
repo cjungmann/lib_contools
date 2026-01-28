@@ -142,7 +142,7 @@ void set_rawread_mode(struct termios* tos)
 
    // termios(3), search "read with interbyte timeout"
    tos->c_cc[VMIN] = 1;
-   tos->c_cc[VTIME] = 1;
+   tos->c_cc[VTIME] = 0; // changed from '1' on 2024-10-21
 }
 
 
