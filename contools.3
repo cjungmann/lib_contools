@@ -9,6 +9,13 @@
 .PP
 link with
 .I -lcontools -ltinfo
+.PP
+.BR NOTE :
+.I -ltinfo
+.B must
+come after the
+.I -lcontools
+or the linker will fail to find several resources.
 .\"
 .so contools.3.d/synopsis.3
 .so contools.3.d/description.3
